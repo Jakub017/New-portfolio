@@ -23,6 +23,11 @@
             href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
             rel="stylesheet"
         />
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/lenis@latest/dist/lenis.min.js"></script>
+
         @vite('resources/scss/style.scss')
     </head>
     <body>
@@ -34,34 +39,7 @@
                 speed: 0.3,
                 className: "mf-cursor",
                 textClassName: "mf-cursor-text",
-            });
-
-            const movieApp = document.querySelector(".works__item--movie");
-            const justtag = document.querySelector(".works__item--justtag");
-            const siteWizard = document.querySelector(".works__item--wizard");
-
-            justtag.addEventListener("mouseenter", () => {
-                cursor.setImg("/justtag.webp");
-            });
-
-            justtag.addEventListener("mouseleave", () => {
-                cursor.removeImg();
-            });
-
-            movieApp.addEventListener("mouseenter", () => {
-                cursor.setImg("/movie_app.webp");
-            });
-
-            movieApp.addEventListener("mouseleave", () => {
-                cursor.removeImg();
-            });
-
-            siteWizard.addEventListener("mouseenter", () => {
-                cursor.setImg("/sitewizard.png");
-            });
-
-            siteWizard.addEventListener("mouseleave", () => {
-                cursor.removeImg();
+                skewingMedia: 0.25,
             });
 
             const hoverItems = [...document.querySelectorAll(".hover-item")];
@@ -75,6 +53,49 @@
                     cursorItem.style.mixBlendMode = "difference";
                 });
             });
+
+            // const planItem = document.querySelector(".features__item--plan");
+            // const designItem = document.querySelector(
+            //     ".features__item--design"
+            // );
+            // const developItem = document.querySelector(
+            //     ".features__item--develop"
+            // );
+            // const launchItem = document.querySelector(
+            //     ".features__item--launch"
+            // );
+
+            // planItem.addEventListener("mouseenter", () => {
+            //     cursor.setImg("/plan.jpg");
+            // });
+
+            // planItem.addEventListener("mouseleave", () => {
+            //     cursor.removeImg();
+            // });
+
+            // designItem.addEventListener("mouseenter", () => {
+            //     cursor.setImg("/plan.jpg");
+            // });
+
+            // designItem.addEventListener("mouseleave", () => {
+            //     cursor.removeImg();
+            // });
+
+            // developItem.addEventListener("mouseenter", () => {
+            //     cursor.setImg("/develop.jpg");
+            // });
+
+            // developItem.addEventListener("mouseleave", () => {
+            //     cursor.removeImg();
+            // });
+
+            // launchItem.addEventListener("mouseenter", () => {
+            //     cursor.setImg("/plan.jpg");
+            // });
+
+            // launchItem.addEventListener("mouseleave", () => {
+            //     cursor.removeImg();
+            // });
         </script>
     </body>
 </html>

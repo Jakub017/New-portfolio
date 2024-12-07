@@ -27,7 +27,45 @@
         </button>
     </div>
 </div>
+<!-- 
+<div class="section features">
+    <div class="section__wrapper">
+        <div class="features__heading-wrapper">
+            <h2 class="section__heading features__heading">
+                <span class="section__colored">Crafting Solutions,</span> Step
+                by Step
+            </h2>
+            <p class="section__subheading features__subheading">
+                Building solutions that not only meet your goals but also
+                elevate your digital presence with a focus on innovation,
+                precision, and user experience.
+            </p>
+        </div>
+        <div class="features__items">
+            <div class="features__item features__item--plan hover-item">
+                <h2 class="features__name">Plan</h2>
+            </div>
+            <div class="features__item features__item--design hover-item">
+                <h2 class="features__name">Design</h2>
+            </div>
+            <div class="features__item features__item--develop hover-item">
+                <h2 class="features__name">Develop</h2>
+            </div>
+            <div class="features__item features__item--launch hover-item">
+                <h2 class="features__name">Launch</h2>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="section works">
+    <div class="section__wrapper">
+        <h2 class="section__heading section__heading--center">
+            My <span class="section__colored">portfolio</span>
+        </h2>
+        <div class="works__container"></div>
+    </div>
+</div> -->
 @endsection @section('scripts')
 <script>
     window.onload = function () {
