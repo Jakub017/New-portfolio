@@ -33,7 +33,14 @@
     <body>
         @include('partials.nav') @yield('content') @include('partials.footer')
         @yield('scripts')
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
         <script>
+            const lenis = new Lenis({
+                autoRaf: true,
+                lerp: 0.05,
+            });
+
             const cursor = new MouseFollower({
                 container: document.body,
                 speed: 0.3,
@@ -53,49 +60,7 @@
                     cursorItem.style.mixBlendMode = "difference";
                 });
             });
-
-            // const planItem = document.querySelector(".features__item--plan");
-            // const designItem = document.querySelector(
-            //     ".features__item--design"
-            // );
-            // const developItem = document.querySelector(
-            //     ".features__item--develop"
-            // );
-            // const launchItem = document.querySelector(
-            //     ".features__item--launch"
-            // );
-
-            // planItem.addEventListener("mouseenter", () => {
-            //     cursor.setImg("/plan.jpg");
-            // });
-
-            // planItem.addEventListener("mouseleave", () => {
-            //     cursor.removeImg();
-            // });
-
-            // designItem.addEventListener("mouseenter", () => {
-            //     cursor.setImg("/plan.jpg");
-            // });
-
-            // designItem.addEventListener("mouseleave", () => {
-            //     cursor.removeImg();
-            // });
-
-            // developItem.addEventListener("mouseenter", () => {
-            //     cursor.setImg("/develop.jpg");
-            // });
-
-            // developItem.addEventListener("mouseleave", () => {
-            //     cursor.removeImg();
-            // });
-
-            // launchItem.addEventListener("mouseenter", () => {
-            //     cursor.setImg("/plan.jpg");
-            // });
-
-            // launchItem.addEventListener("mouseleave", () => {
-            //     cursor.removeImg();
-            // });
         </script>
+        <script src="{{ asset('js/scripts.js') }}"></script>
     </body>
 </html>

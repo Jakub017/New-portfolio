@@ -5,10 +5,94 @@
         class="hero__animation"
         url="https://prod.spline.design/DAA935v6lzeJMKXw/scene.splinecode"
     ></spline-viewer>
-    <h1 class="hero__title">
-        Jakub Lipiński - Full Stack
-        <span class="hero__colored">Web Developer</span>
-    </h1>
+    <div class="hero__title-wrapper">
+        <h1 class="hero__title">
+            <div class="hero__word">
+                <span class="hero__title hero__title--letter">J</span
+                ><span class="hero__title hero__title--letter">a</span
+                ><span class="hero__title hero__title--letter">k</span
+                ><span class="hero__title hero__title--letter">u</span
+                ><span class="hero__title hero__title--letter">b</span>
+            </div>
+            <div class="hero__word">
+                <span class="hero__title hero__title--letter">L</span
+                ><span class="hero__title hero__title--letter">i</span
+                ><span class="hero__title hero__title--letter">p</span
+                ><span class="hero__title hero__title--letter">i</span
+                ><span class="hero__title hero__title--letter">ń</span
+                ><span class="hero__title hero__title--letter">s</span
+                ><span class="hero__title hero__title--letter">k</span
+                ><span class="hero__title hero__title--letter">i</span>
+            </div>
+
+            <div class="hero__word">
+                <span class="hero__title hero__title--letter">-</span>
+            </div>
+
+            <div class="hero__word">
+                <span class="hero__title hero__title--letter">F</span
+                ><span class="hero__title hero__title--letter">u</span
+                ><span class="hero__title hero__title--letter">l</span
+                ><span class="hero__title hero__title--letter">l</span
+                ><span class="hero__title hero__title--letter">-</span
+                ><span class="hero__title hero__title--letter">S</span
+                ><span class="hero__title hero__title--letter">t</span
+                ><span class="hero__title hero__title--letter">a</span
+                ><span class="hero__title hero__title--letter">c</span
+                ><span class="hero__title hero__title--letter">k</span>
+            </div>
+
+            <div class="hero__word">
+                <span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >W</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >e</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >b</span
+                >
+            </div>
+
+            <div class="hero__word">
+                <span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >D</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >e</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >v</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >e</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >l</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >o</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >p</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >e</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >r</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >e</span
+                ><span
+                    class="hero__title hero__title--colored hero__title--letter"
+                    >r</span
+                >
+            </div>
+        </h1>
+    </div>
 
     <div class="hero__stack">
         <h3 class="hero__stack-title">Full-Stack Web Developer</h3>
@@ -27,45 +111,7 @@
         </button>
     </div>
 </div>
-<!-- 
-<div class="section features">
-    <div class="section__wrapper">
-        <div class="features__heading-wrapper">
-            <h2 class="section__heading features__heading">
-                <span class="section__colored">Crafting Solutions,</span> Step
-                by Step
-            </h2>
-            <p class="section__subheading features__subheading">
-                Building solutions that not only meet your goals but also
-                elevate your digital presence with a focus on innovation,
-                precision, and user experience.
-            </p>
-        </div>
-        <div class="features__items">
-            <div class="features__item features__item--plan hover-item">
-                <h2 class="features__name">Plan</h2>
-            </div>
-            <div class="features__item features__item--design hover-item">
-                <h2 class="features__name">Design</h2>
-            </div>
-            <div class="features__item features__item--develop hover-item">
-                <h2 class="features__name">Develop</h2>
-            </div>
-            <div class="features__item features__item--launch hover-item">
-                <h2 class="features__name">Launch</h2>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="section works">
-    <div class="section__wrapper">
-        <h2 class="section__heading section__heading--center">
-            My <span class="section__colored">portfolio</span>
-        </h2>
-        <div class="works__container"></div>
-    </div>
-</div> -->
 @endsection @section('scripts')
 <script>
     window.onload = function () {
