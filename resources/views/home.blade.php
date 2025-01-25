@@ -110,6 +110,12 @@
             My resume
         </button>
     </div>
+    <div class="hero__rectangles">
+        <div class="hero__rectangle hero__rectangle--rectangle-1"></div>
+        <div class="hero__rectangle hero__rectangle--rectangle-2"></div>
+        <div class="hero__rectangle hero__rectangle--rectangle-3"></div>
+        <div class="hero__rectangle hero__rectangle--rectangle-4"></div>
+    </div>
 </div>
 
 @endsection @section('scripts')
