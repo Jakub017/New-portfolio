@@ -38,7 +38,7 @@
         <script>
             const lenis = new Lenis({
                 autoRaf: true,
-                lerp: 0.05,
+                // lerp: 0.05,
             });
 
             const cursor = new MouseFollower({

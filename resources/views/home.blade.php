@@ -115,6 +115,7 @@
         <div class="hero__rectangle hero__rectangle--rectangle-2"></div>
         <div class="hero__rectangle hero__rectangle--rectangle-3"></div>
         <div class="hero__rectangle hero__rectangle--rectangle-4"></div>
+        <div class="hero__rectangle hero__rectangle--rectangle-5"></div>
     </div>
 </div>
 

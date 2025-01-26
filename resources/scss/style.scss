@@ -39,8 +39,6 @@ body {
     height: 100vh;
     width: 100%;
     background-color: #000;
-    position: sticky;
-    top: 0;
 
     &__title-wrapper {
         position: absolute;
@@ -176,26 +174,30 @@ body {
     }
 
     &__rectangle {
-        width: 25%;
+        width: 20vw;
         position: absolute;
-        height: 0%;
+        height: 0;
         bottom: 0;
-        background-color: red;
+        background-color: #fff;
 
         &--rectangle-1 {
             left: 0;
         }
 
         &--rectangle-2 {
-            left: 25%;
+            left: 20%;
         }
 
         &--rectangle-3 {
-            left: 50%;
+            left: 40%;
         }
 
         &--rectangle-4 {
-            left: 75%;
+            left: 60%;
+        }
+
+        &--rectangle-5 {
+            left: 80%;
         }
     }
 }

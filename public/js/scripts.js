@@ -12,17 +12,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.timeline({
+const rectangles = gsap.timeline({
     scrollTrigger: {
         trigger: ".hero",
-        start: "top",
-        end: "top center",
-        scrub: true,
-        pin: true,
-        pinSpacing: false,
+        start: "top top",
+        end: "bottom top",
+        scrub: 1,
+        pin: true, // Przypięcie sekcji hero na czas animacji
     },
-})
-    .to(".hero__rectangle--rectangle-1", { height: "100%", duration: 1 }, 0)
-    .to(".hero__rectangle--rectangle-2", { height: "100%", duration: 1 }, 0.2)
-    .to(".hero__rectangle--rectangle-3", { height: "100%", duration: 1 }, 0.4)
-    .to(".hero__rectangle--rectangle-4", { height: "100%", duration: 1 }, 0.6);
+});
+
+rectangles
+    .to(
+        ".hero__rectangle--rectangle-1",
+        { height: "100%", duration: 0.25 },
+        0.04
+    )
+    .to(
+        ".hero__rectangle--rectangle-2",
+        { height: "100%", duration: 0.25 },
+        0.03
+    )
+    .to(".hero__rectangle--rectangle-3", { height: "100%", duration: 0.25 }, 0)
+    .to(
+        ".hero__rectangle--rectangle-4",
+        { height: "100%", duration: 0.25 },
+        0.01
+    )
+    .to(
+        ".hero__rectangle--rectangle-5",
+        { height: "100%", duration: 0.25 },
+        0.02
+    );
