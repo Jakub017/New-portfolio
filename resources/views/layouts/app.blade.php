@@ -7,6 +7,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
         <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 
+        <script
+            src="https://kit.fontawesome.com/80916011c5.js"
+            crossorigin="anonymous"
+        ></script>
         <link
             rel="stylesheet"
             href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
@@ -35,10 +39,11 @@
         @yield('scripts')
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
         <script>
             const lenis = new Lenis({
                 autoRaf: true,
-                // lerp: 0.05,
+                lerp: 0.15,
             });
 
             const cursor = new MouseFollower({
